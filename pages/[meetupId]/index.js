@@ -17,7 +17,7 @@ const Home = ({ meetupData }) => {
 export async function getStaticPaths() {
   // Fetch data from an API
   const client = await MongoClient.connect(
-    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.dh7kk.mongodb.net/${process.env.DB_DATABASE}?retryWrites=true&w=majority`
+    "mongodb+srv://ibnul1:Q9T8kE1rfkMKWe5W@cluster0.dh7kk.mongodb.net/nextjs_meetups?retryWrites=true&w=majority"
   );
   const db = client.db("nextjs_meetups");
 
@@ -39,7 +39,7 @@ export async function getStaticProps(context) {
 
   // Fetch data from an API
   const client = await MongoClient.connect(
-    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.dh7kk.mongodb.net/${process.env.DB_DATABASE}?retryWrites=true&w=majority`
+    "mongodb+srv://ibnul1:Q9T8kE1rfkMKWe5W@cluster0.dh7kk.mongodb.net/nextjs_meetups?retryWrites=true&w=majority"
   );
   const db = client.db("nextjs_meetups");
 
